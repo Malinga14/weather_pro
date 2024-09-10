@@ -5,6 +5,7 @@ function load(){
     .then(res=>res.json())
     .then(data=>{
         console.log(search);
+        console.log("Hello My Friends...");
     })
     
 }
