@@ -14,29 +14,101 @@
 
   <div class="container">
     <header class="d-flex justify-content-center py-3">
-      <h1>Welcome to Weather Pro</h1>
+      <p id="header1">Weather Pro</p>
     </header>
   </div>
 
 
 
-    <div class="container my-5">
-      <div class="p-5 text-center bg-body-tertiary rounded-8 ">
-        
-        <header class="py-3 mb-4 border-bottom justify-content-center">
-          <div class="container d-flex flex-wrap justify-content-center">
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-              <input type="search" class="form-control" placeholder="Search..." aria-label="Search" size="50" id="txtSearch">
-            </form>
-          </div>
-        </header>
-        <div class="d-inline-flex gap-2 mb-5">
-          <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button" id="btnSearch" onclick="load()">
-            Search
-          </button>
+  <div class="container my-5">
+    <div class="p-5 text-center bg-body-tertiary rounded-8 " >
+      <header class="py-3 mb-4 border-bottom justify-content-center">
+        <div class="container d-flex flex-wrap justify-content-center">
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" size="50"
+              id="txtSearch">
+          </form>
+        </div>
+      </header>
+      <div class="d-inline-flex gap-2 mb-5">
+        <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" id="btnSearch" onclick="load()"
+          type="button" >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>  
+
+  <div class="row">
+    <div class="col">
+      <div class="container my-5">
+        <div class="p-5 text-center bg-body-tertiary rounded-8 ">
+          <header class="justify-content-center" >
+            <div class="container d-flex flex-wrap justify-content-center">
+              <div class="col">
+                <div class="row"><div class="col"><h3 id="titleCity"></h3></div></div>
+                <div class="row"><br></div>
+                <div class="row"><div class="col"><p id="city"></p></div></div>
+              </div>
+            </div>
+          </header>
         </div>
       </div>
     </div>
+
+    <div class="col">
+      <div class="container my-5">
+        <div class="p-5 text-center bg-body-tertiary rounded-8 ">
+          <header class="justify-content-center" >
+            <div class="container d-flex flex-wrap justify-content-center">
+              <div class="col">
+                <div class="row"><div class="col"><h3 id="titleCountry"></h3></div></div>
+                <div class="row"><br></div>
+                <div class="row"><div class="col"><p id="country"></p></div></div>
+              </div> 
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="container my-5">
+        <div class="p-5 text-center bg-body-tertiary rounded-8 ">
+          <header class="justify-content-center" >
+            <div class="container d-flex flex-wrap justify-content-center">
+              <div class="col">
+                <div class="row"><div class="col"><h3 id="titleTempC"></h3></div></div>
+                <div class="row"><br></div>
+                <div class="row"><div class="col"><p id="tempC"></p></div></div>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="container my-5">
+        <div class="p-5 text-center bg-body-tertiary rounded-8 ">
+          <header class="justify-content-center" >
+            <div class="container d-flex flex-wrap justify-content-center">
+              <div class="col">
+                <div class="row"><div class="col"><h3 id="titleTempF"></h3></div></div>
+                <div class="row"><br></div>
+                <div class="row"><div class="col"><p id="tempF"></p></div></div>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="row"></div>
+
 
 
   <div class="boxers">
@@ -44,7 +116,7 @@
 
       <div class="col">
         <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+          <svg class="bd-placeholder-img card-img-top" id="newYorkW" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
             role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
@@ -60,7 +132,7 @@
 
       <div class="col">
         <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+          <svg class="bd-placeholder-img card-img-top" id="londonW" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
             role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
@@ -75,7 +147,7 @@
 
       <div class="col">
         <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+          <svg class="bd-placeholder-img card-img-top" id="melborneW" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
             role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
