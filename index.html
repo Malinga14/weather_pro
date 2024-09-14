@@ -31,7 +31,7 @@
         </div>
       </header>
       <div class="d-inline-flex gap-2 mb-5">
-        <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" id="btnSearch" onclick="load()"
+        <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" id="btnSearch" onclick="search()"
           type="button" >
           Search
         </button>
@@ -39,7 +39,7 @@
     </div>
   </div>  
 
-  <div class="row">
+  <div class="row" id="show1">
     <div class="col">
       <div class="container my-5">
         <div class="p-5 text-center bg-body-tertiary rounded-8 ">
@@ -48,7 +48,7 @@
               <div class="col">
                 <div class="row"><div class="col"><h3 id="titleCity"></h3></div></div>
                 <div class="row"><br></div>
-                <div class="row"><div class="col"><p id="city"></p></div></div>
+                <div class="row"><div class="col"><h5 id="city"></h5></div></div>
               </div>
             </div>
           </header>
@@ -56,7 +56,7 @@
       </div>
     </div>
 
-    <div class="col">
+    <div class="col" id="show2">
       <div class="container my-5">
         <div class="p-5 text-center bg-body-tertiary rounded-8 ">
           <header class="justify-content-center" >
@@ -64,7 +64,7 @@
               <div class="col">
                 <div class="row"><div class="col"><h3 id="titleCountry"></h3></div></div>
                 <div class="row"><br></div>
-                <div class="row"><div class="col"><p id="country"></p></div></div>
+                <div class="row"><div class="col"><h5 id="country"></h5></div></div>
               </div> 
             </div>
           </header>
@@ -73,7 +73,7 @@
     </div>
 
 
-    <div class="col">
+    <div class="col" id="show3">
       <div class="container my-5">
         <div class="p-5 text-center bg-body-tertiary rounded-8 ">
           <header class="justify-content-center" >
@@ -81,7 +81,7 @@
               <div class="col">
                 <div class="row"><div class="col"><h3 id="titleTempC"></h3></div></div>
                 <div class="row"><br></div>
-                <div class="row"><div class="col"><p id="tempC"></p></div></div>
+                <div class="row"><div class="col"><h5 id="tempC"></h5></div></div>
               </div>
             </div>
           </header>
@@ -90,7 +90,7 @@
     </div>
 
 
-    <div class="col">
+    <div class="col" id="show4">
       <div class="container my-5">
         <div class="p-5 text-center bg-body-tertiary rounded-8 ">
           <header class="justify-content-center" >
@@ -98,7 +98,7 @@
               <div class="col">
                 <div class="row"><div class="col"><h3 id="titleTempF"></h3></div></div>
                 <div class="row"><br></div>
-                <div class="row"><div class="col"><p id="tempF"></p></div></div>
+                <div class="row"><div class="col"><h5 id="tempF"></h5></div></div>
               </div>
             </div>
           </header>
@@ -107,7 +107,6 @@
     </div>
 
   </div>
-  <div class="row"></div>
 
 
 
@@ -118,8 +117,10 @@
         <div class="card shadow-sm">
           <img src="img/london.jpg">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
+            <div class="row"><h1 style="text-align: center;">London</h1></div>
+            <div class="row"><br></div>
+            <div class="row"><h5 id="tempUk"></h5></div>
+            <div class="row"><h5 id="windUk"></h5></div>
           </div>
         </div>
       </div>
@@ -129,8 +130,10 @@
         <div class="card shadow-sm">
           <img src="img/new york.jpg">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
+            <div class="row"><h1 style="text-align: center;">New York</h1></div>
+            <div class="row"><br></div>
+            <div class="row"><h5 id="tempUsa"></h5></div>
+            <div class="row"><h5 id="windUsa"></h5></div>
           </div>
         </div>
       </div>
@@ -139,8 +142,10 @@
         <div class="card shadow-sm">
           <img src="img/sydney.jpg">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
+            <div class="row"><h1 style="text-align: center;">Sydney</h1></div>
+            <div class="row"><br></div>
+            <div class="row"><h5 id="tempAus"></h5></div>
+            <div class="row"><h5 id="windAus"></h5></div>
           </div>
         </div>
       </div>
